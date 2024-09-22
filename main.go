@@ -3,13 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	var (
-		firstName string = "Suzumi"
+	var day int8 = 1
 
-		lastName string = "Morizuki"
-
-		birthday string = "August 31"
-	)
-
-	fmt.Printf("Her name is %s %s and her birthday is %s.\n", firstName, lastName, birthday)
+	switch day {
+	case 0:
+		fmt.Println("Sunday")
+	case 1:
+		fmt.Println("Monday")
+	case 2:
+		fmt.Println("Tuesday")
+	case 3:
+		fmt.Println("Wednesday")
+	case 4:
+		fmt.Println("Thursday")
+	case 5:
+		fmt.Println("Friday")
+	case 6:
+		fmt.Println("Saturday")
+	default:
+		fmt.Println("Who are you actually?")
+	}
 }
